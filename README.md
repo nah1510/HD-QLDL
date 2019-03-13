@@ -2,7 +2,7 @@
 - MSSV:
   - 16520337 Phạm Bảo Hân
   - 16520292 Nguyễn Dzoãn Hoàng Khánh Duy 
-- *Phần mềm quản lý các đại lý nước ngọt*
+- ĐỀ TÀI: **Phần mềm quản lý các đại lý nước ngọt**
 - Quy trình nghiệp vụ khách hàng cần:
   - Quản lý mua hàng từ nhà cung cấp 
   - Quản lý công nợ với nhà cung cấp: Nợ tiền, nợ vỏ, dư cược.
