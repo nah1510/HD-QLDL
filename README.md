@@ -1,6 +1,7 @@
 # HD-QLDL
-- 16520337 Phạm Bảo Hân
-- 16520292 Nguyễn Dzoãn Hoàng Khánh Duy 
+- MSSV:
+  - 16520337 Phạm Bảo Hân
+  - 16520292 Nguyễn Dzoãn Hoàng Khánh Duy 
 - *Phần mềm quản lý các đại lý nước ngọt*
 - Quy trình nghiệp vụ khách hàng cần:
   - Quản lý mua hàng từ nhà cung cấp 
