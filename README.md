@@ -1,4 +1,4 @@
-# HD-QLDL
+# HD- Quản Lý Đại Lý
 - MSSV:
   - 16520337 Phạm Bảo Hân
   - 16520292 Nguyễn Dzoãn Hoàng Khánh Duy 
