@@ -10,3 +10,4 @@ Quy trình nghiệp vụ khách hàng cần:
 - Thống kê doanh số, theo dõi tình hình thanh toán và công nợ của khách hàng
 - Theo dõi doanh số theo nhân viên
 - Báo cáo doanh thu theo ngày, tuần, tháng
+Thêm 
