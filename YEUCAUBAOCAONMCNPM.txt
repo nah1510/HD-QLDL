@@ -1,0 +1,9 @@
+phân rã chúc năng (FDD)
+mô hình hóa dữ liệu (DFD)
+sơ đồ lớp (class diagram)
+
+
+thiết kế
+	tk kiến trúc:
+	thiết kế giao diện
+	thiết kế dữ liệu ERD

@@ -8,3 +8,12 @@ C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.vbproj.C
 C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.dll
 C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.xml
 C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.pdb
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\bin\Debug\QLDLNuoc_DTO.dll
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\bin\Debug\QLDLNuoc_DTO.pdb
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\bin\Debug\QLDLNuoc_DTO.xml
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.Resources.resources
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.vbproj.GenerateResource.cache
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.vbproj.CoreCompileInputs.cache
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.dll
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.xml
+E:\HD-QLDL\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.pdb

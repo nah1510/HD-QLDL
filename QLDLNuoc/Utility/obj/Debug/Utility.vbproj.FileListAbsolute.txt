@@ -8,3 +8,12 @@ C:\Users\ASUS\source\repos\QLDLNuoc\Utility\obj\Debug\Utility.vbproj.CoreCompile
 C:\Users\ASUS\source\repos\QLDLNuoc\Utility\obj\Debug\Utility.dll
 C:\Users\ASUS\source\repos\QLDLNuoc\Utility\obj\Debug\Utility.xml
 C:\Users\ASUS\source\repos\QLDLNuoc\Utility\obj\Debug\Utility.pdb
+E:\HD-QLDL\QLDLNuoc\Utility\bin\Debug\Utility.dll
+E:\HD-QLDL\QLDLNuoc\Utility\bin\Debug\Utility.pdb
+E:\HD-QLDL\QLDLNuoc\Utility\bin\Debug\Utility.xml
+E:\HD-QLDL\QLDLNuoc\Utility\obj\Debug\Utility.Resources.resources
+E:\HD-QLDL\QLDLNuoc\Utility\obj\Debug\Utility.vbproj.GenerateResource.cache
+E:\HD-QLDL\QLDLNuoc\Utility\obj\Debug\Utility.vbproj.CoreCompileInputs.cache
+E:\HD-QLDL\QLDLNuoc\Utility\obj\Debug\Utility.dll
+E:\HD-QLDL\QLDLNuoc\Utility\obj\Debug\Utility.xml
+E:\HD-QLDL\QLDLNuoc\Utility\obj\Debug\Utility.pdb
