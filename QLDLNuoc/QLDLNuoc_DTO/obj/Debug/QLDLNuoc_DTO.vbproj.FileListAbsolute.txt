@@ -1,0 +1,10 @@
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\bin\Debug\QLDLNuoc_DTO.dll
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\bin\Debug\QLDLNuoc_DTO.pdb
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\bin\Debug\QLDLNuoc_DTO.xml
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.vbprojResolveAssemblyReference.cache
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.Resources.resources
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.vbproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.dll
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.xml
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DTO\obj\Debug\QLDLNuoc_DTO.pdb

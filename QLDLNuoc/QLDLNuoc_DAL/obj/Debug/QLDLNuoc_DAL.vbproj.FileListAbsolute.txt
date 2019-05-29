@@ -1,0 +1,17 @@
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\QLDLNuoc_DAL.dll
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\QLDLNuoc_DAL.pdb
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\QLDLNuoc_DAL.xml
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\QLDLNuoc_DTO.dll
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\Utility.dll
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\QLDLNuoc_DTO.pdb
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\QLDLNuoc_DTO.xml
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\Utility.pdb
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\bin\Debug\Utility.xml
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.vbprojResolveAssemblyReference.cache
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.Resources.resources
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.vbproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.vbproj.CopyComplete
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.dll
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.xml
+C:\Users\ASUS\source\repos\QLDLNuoc\QLDLNuoc_DAL\obj\Debug\QLDLNuoc_DAL.pdb
