@@ -312,26 +312,6 @@ public class frmPhieuXuatHang {
 		lblnVTnh.setBounds(329, 107, 66, 14);
 		frame.getContentPane().add(lblnVTnh);
 		
-		JButton btnNewButton_1 = new JButton("New button");
-		btnNewButton_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String x=cbxDonVi.getSelectedItem().toString();
-				try {
-					System.out.print(tbChiTietPhieuXuat.getValueAt(0, 0).toString());
-					System.out.print(QLDL_BUS.MatHang_BUS.selectCondition(tbChiTietPhieuXuat.getValueAt(0, 0).toString()).getMaMatHang());
-				} catch (ClassNotFoundException e1) {
-					
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				} catch (SQLException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-			}
-		});
-		btnNewButton_1.setBounds(97, 176, 89, 23);
-		frame.getContentPane().add(btnNewButton_1);
-		
 		
 	}
 	void TongTien() {
@@ -340,7 +320,6 @@ public class frmPhieuXuatHang {
 		for(int row = 0; row < Rowmax ; row++) {
 			sum+= Integer.parseInt( tbChiTietPhieuXuat.getValueAt(row, 4).toString());
 		}
-		String s=String.valueOf(sum);
 		txtTongTien.setText(String.valueOf(sum));
 	}
 }

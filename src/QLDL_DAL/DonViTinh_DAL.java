@@ -74,5 +74,25 @@ public class DonViTinh_DAL {
 		return null;
 	}
 
+	public static Integer demSoDonViTinh() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		PreparedStatement ptmt = null; 
+		Connection conn = Dataconnect.connet();
+		
+		String query = "SELECT COUNT(MaDVT) FROM donvitinh ";
+		try {
+			ptmt = conn.prepareStatement(query);
+			ResultSet rs = ptmt.executeQuery();
+			rs.next();
+			int i=rs.getInt(1);
+			conn.close();
+			return i;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;	
+	}
+
 
 }

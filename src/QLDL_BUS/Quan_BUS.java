@@ -12,7 +12,7 @@ public class Quan_BUS {
 	public Quan_BUS(){
 		dal = new Quan_DAL();
 	}
-	public ArrayList< Quan_DTO> selectAll() throws ClassNotFoundException, SQLException {
+	public static ArrayList< Quan_DTO> selectAll() throws ClassNotFoundException, SQLException {
 		return dal.selectAll();
 	}
 	

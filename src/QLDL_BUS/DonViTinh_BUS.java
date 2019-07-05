@@ -31,5 +31,9 @@ public class DonViTinh_BUS {
 		return dal.getListDVT();
 		
 	}
+	public static Integer demSoDonViTinh_BUS() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return dal.demSoDonViTinh();
+	}
 
 }

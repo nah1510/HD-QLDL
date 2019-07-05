@@ -39,4 +39,24 @@ public class HoSoDL_BUS {
 		return HoSoDL_DAL.UpdateNo(maDL,No);
 	}
 
+	public static ArrayList<HoSoDL_DTO> selectThang(int i) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return HoSoDL_DAL.selectThang(i);
+	}
+
+	public static int DemQuan(int maQuan) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return HoSoDL_DAL.DemQuan(maQuan);
+	}
+
+	public static void Delete(int valueAt) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		HoSoDL_DAL.Delete(valueAt);
+	}
+
+	public static boolean Update(HoSoDL_DTO hoSoDaiLy) throws ClassNotFoundException {
+		// TODO Auto-generated method stub
+		return HoSoDL_DAL.Update(hoSoDaiLy);
+	}
+
 }

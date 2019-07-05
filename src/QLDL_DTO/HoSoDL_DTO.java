@@ -27,6 +27,17 @@ public class HoSoDL_DTO {
 		this.NgayTiepNhan = NgayTiepNhan;
 	}
 
+
+	public HoSoDL_DTO(int MaDL, String TenDL , int MaLoaiDL , String DienThoai , String DiaChi , int MaQuan , String Email  ) {
+		this.MaDL=MaDL;
+		this.TenDL = TenDL;
+		this.MaLoaiDL = MaLoaiDL;
+		this.DienThoai = DienThoai;
+		this.DiaChi = DiaChi;
+		this.MaQuan = MaQuan;
+		this.Email = Email;
+	}
+	
 	public int getMaQuan() {
 		return MaQuan;
 	}

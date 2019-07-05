@@ -27,4 +27,28 @@ public class LoaiDL_BUS {
 		// TODO Auto-generated method stub
 		return dal.getTenLoaiDL(maLoaiDL);
 	}
+	public static Integer demLoaiDL() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return LoaiDL_DAL.demLoaiDL();
+	}
+	public static boolean insert(LoaiDL_DTO loaiDL) throws ClassNotFoundException {
+		// TODO Auto-generated method stub
+		return LoaiDL_DAL.insert(loaiDL);
+	}
+	public static ArrayList<LoaiDL_DTO> search(String text) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return LoaiDL_DAL.search(text);
+	}
+	public static void Delete(int valueAt) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		LoaiDL_DAL.Delete(valueAt);
+	}
+	public static LoaiDL_DTO getLoaiDL(int ma) throws ClassNotFoundException, SQLException{
+		// TODO Auto-generated method stub
+		return LoaiDL_DAL.getLoaiDL(ma);
+	}
+	public static boolean update(LoaiDL_DTO loaiDL, int ma) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return LoaiDL_DAL.update(loaiDL,ma);
+	}
 }

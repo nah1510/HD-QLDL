@@ -8,7 +8,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import QLDL_BUS.HoSoDL_BUS;
+import QLDL_BUS.PhieuThuTien_BUS;
 import QLDL_DTO.HoSoDL_DTO;
+import QLDL_DTO.PhieuThuTien_DTO;
 
 import javax.swing.JComboBox;
 import javax.swing.JButton;
@@ -137,12 +139,16 @@ public class frmPhieuThuTien {
 			public void actionPerformed(ActionEvent e) {
 				if(Integer.valueOf(txtTien.getText())>Integer.valueOf(txtNo.getText())){
 					JOptionPane.showMessageDialog(null, "Số tiền thu không được lớn hơn nợ của đại lý");
+					if(Integer.valueOf(txtTien.getText())<1)
+						JOptionPane.showMessageDialog(null, "Số tiền thu không được nhỏ hơn 1");
 				}
 				else {
 					try {
 						//HoSoDL_BUS.UpdateNo(MaDL,Integer.valueOf(txtNo.getText())-Integer.valueOf(txtTien.getText()));
+						PhieuThuTien_DTO PhieuThu=new PhieuThuTien_DTO(MaDL,Integer.valueOf(txtTien.getText()),new java.sql.Date(System.currentTimeMillis()));
 						if(HoSoDL_BUS.UpdateNo(MaDL,Integer.valueOf(txtNo.getText())-Integer.valueOf(txtTien.getText()))== true)
 						{
+							PhieuThuTien_BUS.Insert(PhieuThu);
 							txtNo.setText(String.valueOf(Integer.valueOf(txtNo.getText())-Integer.valueOf(txtTien.getText())));
 						}
 					} catch (NumberFormatException e1) {

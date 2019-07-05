@@ -27,11 +27,13 @@ public class HoSoDL_DAL {
 			ptmt.setDate(8, hoSoDaiLy.getNgayTiepNhan());
 			ptmt.setInt(9, 0);
 			if( ptmt.executeUpdate() != 0) {
+				conn.close();
 				System.err.println(true);
 				return true;
 			}
 				
 			else {
+				conn.close();
 				System.err.println(false);
 				return false;
 			}
@@ -51,11 +53,13 @@ public class HoSoDL_DAL {
 		try {
 			ptmt = conn.prepareStatement(query);
 			ResultSet rs = ptmt.executeQuery();
+			conn.close();
 			return rs;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		conn.close();
 		return null;	
 	}
 
@@ -75,17 +79,20 @@ public class HoSoDL_DAL {
 				DaiLy.setTenDL(rs.getString("TenDL"));
 				DaiLy.setMaLoaiDL(rs.getInt("MaLoaiDL"));
 				DaiLy.setTienNo(rs.getInt("TienNo"));
+				DaiLy.setMaQuan(rs.getInt("MaQuan"));
 				//System.out.print(rs.getInt("MaDL"));
 				//System.out.print(rs.getString("TenDL"));
 				//System.out.print(rs.getInt("MaLoaiDL"));
 				//System.out.print(rs.getInt("MaQuan"));
 				dsDaiLy.add(DaiLy);
 			}
+			conn.close();
 			return dsDaiLy;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		conn.close();
 		return null;
 	}
 
@@ -105,8 +112,10 @@ public class HoSoDL_DAL {
 				DaiLy.setDiaChi(rs.getString("DiaChi"));
 				DaiLy.setDienThoai(rs.getString("DienThoai"));
 				DaiLy.setEmail(rs.getString("Email"));
+				conn.close();
 				return DaiLy;
 			}
+			conn.close();
 			return null;
 	}
 
@@ -117,7 +126,92 @@ public class HoSoDL_DAL {
 		String query = "UPDATE hosodayly SET TienNo="+no+" where MaDL="+maDL;
 		ptmt = conn.prepareStatement(query);
 		if(ptmt.executeUpdate()!=0)
+		{
+			conn.close();
 			return true;
+		}
+		conn.close();
+		return false;
+	}
+
+	public static ArrayList<HoSoDL_DTO> selectThang(int Thang) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		PreparedStatement ptmt = null; 
+		Connection conn = Dataconnect.connet();
+		 
+		String query = "SELECT * FROM hosodayly WHERE MONTH(`NgayTiepNhan`)<= "+Thang;
+		try {
+			ptmt = conn.prepareStatement(query);
+			ResultSet rs = ptmt.executeQuery();
+			ArrayList<HoSoDL_DTO> dsDaiLy = new ArrayList<HoSoDL_DTO>();
+			while(rs.next()) {
+				HoSoDL_DTO DaiLy = new HoSoDL_DTO();
+				DaiLy.setMaDL(rs.getInt("MaDL"));
+				DaiLy.setTenDL(rs.getString("TenDL"));
+				DaiLy.setMaLoaiDL(rs.getInt("MaLoaiDL"));
+				DaiLy.setTienNo(rs.getInt("TienNo"));
+				//System.out.print(rs.getInt("MaDL"));
+				//System.out.print(rs.getString("TenDL"));
+				//System.out.print(rs.getInt("MaLoaiDL"));
+				//System.out.print(rs.getInt("MaQuan"));
+				dsDaiLy.add(DaiLy);
+			}
+			conn.close();
+			return dsDaiLy;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		conn.close();
+		return null;
+	}
+
+	public static int DemQuan(int maQuan) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		PreparedStatement ptmt = null; 
+		String query = "SELECT COUNT(MaQuan) FROM hosodayly WHERE MaQuan="+maQuan;
+		Connection conn = Dataconnect.connet();
+		ptmt = conn.prepareStatement(query);
+		ResultSet rs = ptmt.executeQuery();
+		rs.next();
+		int i=rs.getInt(1);
+		conn.close();
+		return i;
+	}
+
+	public static void Delete(int maDL) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		PreparedStatement ptmt = null; 
+		String query = "DELETE FROM hosodayly WHERE MaDL="+maDL;
+		Connection conn = Dataconnect.connet();
+		ptmt = conn.prepareStatement(query);
+		ptmt.executeUpdate();
+		conn.close();
+	}
+
+	public static boolean Update(HoSoDL_DTO hoSoDaiLy) throws ClassNotFoundException {
+		// TODO Auto-generated method stub
+		try {
+			PreparedStatement ptmt = null; 
+			String query = "UPDATE hosodayly SET TenDL='"+hoSoDaiLy.getTenDL()+"',MaLoaiDL="+hoSoDaiLy.getMaLoaiDL()+",DienThoai='"+hoSoDaiLy.getDienThoai()+
+					"',DiaChi='"+hoSoDaiLy.getDiaChi()+"',MaQuan="+hoSoDaiLy.getMaQuan()+",Email='"+hoSoDaiLy.getEmail()+"' where MaDL="+hoSoDaiLy.getMaDL();
+			Connection conn = Dataconnect.connet();
+			ptmt = conn.prepareStatement(query);
+			if( ptmt.executeUpdate() != 0) {
+				conn.close();
+				System.err.println(true);
+				return true;
+			}
+				
+			else {
+				conn.close();
+				System.err.println(false);
+				return false;
+			}
+		}catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return false;
 	}
 

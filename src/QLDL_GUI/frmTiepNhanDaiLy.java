@@ -11,6 +11,8 @@ import javax.swing.JTextField;
 
 import QLDL_BUS.LoaiDL_BUS;
 import QLDL_BUS.Quan_BUS;
+import QLDL_BUS.ThamSo_BUS;
+import QLDL_DAL.HoSoDL_DAL;
 import QLDL_DTO.HoSoDL_DTO;
 import QLDL_DTO.LoaiDL_DTO;
 import QLDL_DTO.Quan_DTO;
@@ -70,7 +72,7 @@ public class frmTiepNhanDaiLy {
 		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 667, 312);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JButton button = new JButton("Th\u00EAm");
@@ -86,14 +88,21 @@ public class frmTiepNhanDaiLy {
 					//listQuan_DTO=Quan_bus.selectAll();
 					//Quan_DTO Quan=listQuan_DTO.get(cbxQuan.getSelectedIndex());
 					Quan_DTO Quan=Quan_bus.selectAll().get(cbxQuan.getSelectedIndex());
+					 
 					HoSoDL_DTO HoSoDaiLy = new HoSoDL_DTO(txtTen.getText(),LoaiDL.getMaLoaiDL(), txtSDT.getText(), txtDiaChi.getText(), Quan.getMaQuan(), txtEmail.getText(), new java.sql.Date(System.currentTimeMillis()));
-        		
-					if(HoSoDL_BUS.Insert(HoSoDaiLy) == true) {
-						JOptionPane.showMessageDialog(null, "Insert Employee Success", "Success: " + "Success Mesage", JOptionPane.INFORMATION_MESSAGE);
-					}else {
-						JOptionPane.showMessageDialog(null, "Insert Employee Fail", "Fail: " + "Success Mesage", JOptionPane.CLOSED_OPTION);
-					}
-				} catch (HeadlessException e) {
+					if(HoSoDL_DAL.DemQuan(Quan.getMaQuan())==ThamSo_BUS.SoDaiLyToiDa()) 
+						{
+							JOptionPane.showMessageDialog(null, "Quận bạn chọn đã đủ số đại lý");
+						}
+					else
+						{
+							if(HoSoDL_BUS.Insert(HoSoDaiLy) == true) {
+								JOptionPane.showMessageDialog(null, "Insert Employee Success", "Success: " + "Success Mesage", JOptionPane.INFORMATION_MESSAGE);
+							}else {
+								JOptionPane.showMessageDialog(null, "Insert Employee Fail", "Fail: " + "Success Mesage", JOptionPane.CLOSED_OPTION);
+							}
+						}
+					} catch (HeadlessException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (ClassNotFoundException e) {
