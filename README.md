@@ -1,4 +1,4 @@
-68747470733a2f2f692e696d6775722e636f6d2f30646451596d332e706e67
+
 
 TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN
 ĐỒ ÁN QUẢN LÝ ĐẠI LÝ
@@ -55,6 +55,7 @@ Hiểu được quy trình công nghệ phần mềm, hiểu được cách thi�
 
 
 LIÊN HỆ:
+
 Nguyễn Dzoãn Hoàng Khánh Duy - 16520292@gm.uit.edu.vn
 
 Phạm Bảo Hân - 16520337@gm.uit.edu.vn
